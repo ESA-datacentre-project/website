@@ -1,80 +1,61 @@
 ---
 # Leave the homepage title empty to use the site title
 title:
-date: 2022-10-24
+date: 2026-10-02
 type: landing
 
 sections:
+  # 1. GOALS AND BACKGROUND
   - block: hero
     content:
       title: |
-        Wowchemy
-        Research Group
+        SNSF Data Center Project
       image:
-        filename: welcome.jpg
+        filename: welcome.jpg # You can replace this image in assets/media/ later
       text: |
         <br>
+        This is a Swiss National Science Foundation (SNSF) funded initiative exploring next-generation data center architectures.
         
-        The **Wowchemy Research Group** has been a center of excellence for Artificial Intelligence research, teaching, and practice since its founding in 2016.
-  
-  - block: collection
+        **Our Background & Goals:**
+        Data centers consume a massive amount of global energy. This project investigates new cooling methodologies, optimizes server workloads, and aims to provide sustainable frameworks for the tech industry over the next three years.
+
+  # 2. THE TEAM
+  - block: people
     content:
-      title: Latest News
-      subtitle:
-      text:
-      count: 5
-      filters:
-        author: ''
-        category: ''
-        exclude_featured: false
-        publication_type: ''
-        tag: ''
-      offset: 0
-      order: desc
-      page_type: post
+      title: The Team
+      user_groups:
+        - Principal Investigators
+        - Researchers
+        - Grad Students
     design:
-      view: card
-      columns: '1'
-  
+      show_interests: true
+      show_role: true
+      show_social: true
+
+  # 3. OUTCOMES
   - block: markdown
     content:
-      title:
-      subtitle: ''
-      text:
+      title: Project Outcomes
+      subtitle: Open Source Tools & Datasets
+      text: |
+        As part of our commitment to Open Research Data (ORD), all our project outcomes will be published here:
+        
+        * **Dataset:** [Thermal metrics from 100 servers (Zenodo)](#)
+        * **Software:** [Open-source workload scheduler (GitHub)](#)
+        * **Whitepaper:** [Industry guidelines for green data centers](#)
     design:
       columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
 
+  # 4. LATEST PUBLICATIONS
   - block: collection
     content:
-      title: Latest Preprints
+      title: Latest Publications
       text: ""
       count: 5
       filters:
         folders:
           - publication
-        publication_type: 'article'
     design:
-      view: citation
-      columns: '1'
-
-  - block: markdown
-    content:
-      title:
-      subtitle:
-      text: |
-        {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
-    design:
+      view: citation # This makes them look like nicely formatted academic citations
       columns: '1'
 ---
