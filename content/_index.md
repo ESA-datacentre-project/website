@@ -5,11 +5,31 @@ date: 2026-10-02
 type: landing
 
 sections:
+  - block: hero
+    content:
+      title: 'Welcome to the ESA Lab'
+      text: 'Developing next-generation data center technologies.'
+      cta:
+        label: View Our Research
+        url: 'publication'
+        icon: arrow-down
+        icon_pack: fas
+    design:
+      background:
+        video:
+          filename: data_centre.mp4
+        text_color_light: true
+        filters:
+          brightness: 0.4
+      spacing:
+        # This controls how tall the video section is (vh = viewport height)
+        padding: ["30vh", "0", "30vh", "0"]
+
   # 1. GOALS AND BACKGROUND
   - block: hero
     content:
       title: |
-        SNSF Data Center Project
+        Data Center Project
       image:
         filename: welcome.jpg # You can replace this image in assets/media/ later
       text: |
