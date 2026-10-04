@@ -27,6 +27,7 @@ sections:
         - Principal Investigators
         - Researchers
         - Grad Students
+        - Temps
     design:
       show_interests: true
       show_role: true
